@@ -32,7 +32,7 @@ if [ ! -f "$BIN_DEST" ] && [ ! -f "/root/usque" ]; then
         *) echo "Неподдерживаемая архитектура: $ARCH"; exit 1 ;;
     esac
 
-    DOWNLOAD_URL="https://github.com/hrost/usque/releases/latest/download/usque-linux-${USQUE_ARCH}.tar.gz"
+    DOWNLOAD_URL="https://github.com/Diniboy1123/usque/releases/latest/download/usque-linux-${USQUE_ARCH}.tar.gz"
     echo "Загрузка: $DOWNLOAD_URL"
     
     if curl -sLf --connect-timeout 10 -o usque.tar.gz "$DOWNLOAD_URL"; then

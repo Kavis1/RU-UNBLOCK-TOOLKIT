@@ -200,7 +200,7 @@ yandex.ru                    | Доступен           | Direct (Прямой
 Выражаем огромную благодарность создателям и мейнтейнерам проектов с открытым исходным кодом, на базе которых построен данный комплекс:
 
 * **[Zapret](https://github.com/bol-van/zapret)** от [@bol-van](https://github.com/bol-van) — непревзойденный инструмент обхода DPI и десинхронизации сетевых пакетов.
-* **[Usque MASQUE CLI](https://github.com/hrost/usque)** от [@hrost](https://github.com/hrost) — клиент Cloudflare WARP по современному протоколу MASQUE (HTTP/3 over QUIC).
+* **[Usque MASQUE CLI](https://github.com/Diniboy1123/usque)** от [@Diniboy1123](https://github.com/Diniboy1123) — клиент Cloudflare WARP по современному протоколу MASQUE (HTTP/3 over QUIC).
 * **[Cloudflare WARP](https://developers.cloudflare.com/warp-client/)** и **[WireGuard](https://www.wireguard.com/)** — глобальная сеть и производительный туннель.
 * **[ByeDPI](https://github.com/hufrea/byedpi)** от [@hufrea](https://github.com/hufrea) — легковесный userspace прокси десинхронизации TCP.
 * **[SpoofDPI](https://github.com/xvzc/SpoofDPI)** от [@xvzc](https://github.com/xvzc) — быстрый инструмент обхода DPI на Go.

@@ -195,7 +195,7 @@ yandex.ru                    | Accessible         | Direct (Clean)   | 🟢 DIRE
 We express our deepest gratitude to the creators and maintainers of the open-source projects that made this toolkit possible:
 
 * **[Zapret](https://github.com/bol-van/zapret)** by [@bol-van](https://github.com/bol-van) — Powerful DPI circumvention software and packet desynchronization engine.
-* **[Usque MASQUE CLI](https://github.com/hrost/usque)** by [@hrost](https://github.com/hrost) — Modern Cloudflare WARP client powered by HTTP/3 over QUIC (MASQUE protocol).
+* **[Usque MASQUE CLI](https://github.com/Diniboy1123/usque)** by [@Diniboy1123](https://github.com/Diniboy1123) — Modern Cloudflare WARP client powered by HTTP/3 over QUIC (MASQUE protocol).
 * **[Cloudflare WARP](https://developers.cloudflare.com/warp-client/)** & **[WireGuard](https://www.wireguard.com/)** — High-performance secure tunneling and global egress network.
 * **[ByeDPI](https://github.com/hufrea/byedpi)** by [@hufrea](https://github.com/hufrea) — Lightweight userspace DPI bypass proxy.
 * **[SpoofDPI](https://github.com/xvzc/SpoofDPI)** by [@xvzc](https://github.com/xvzc) — Fast DPI circumvention proxy written in Go.
