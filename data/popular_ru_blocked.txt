@@ -1,0 +1,72 @@
+# Топ популярных заблокированных / ограниченных в РФ сервисов
+# Формат: домен или субдомен
+
+# --- Мультимедиа, Видео и Стриминг (DPI / ТСПУ замедление / блокировка) ---
+googlevideo.com
+youtube.com
+youtu.be
+ytimg.com
+ggpht.com
+discord.com
+discordapp.com
+discord.gg
+discordapp.net
+twitch.tv
+tiktok.com
+
+# --- Социальные сети и коммуникации (DPI / Блокировка РКН) ---
+instagram.com
+cdninstagram.com
+facebook.com
+fbcdn.net
+twitter.com
+x.com
+t.co
+twimg.com
+linkedin.com
+rutracker.org
+ntc.party
+
+# --- Зарубежные ИИ-сервисы (Геоблокировка 403 Forbidden / Anti-RU) ---
+chatgpt.com
+openai.com
+auth0.openai.com
+platform.openai.com
+oaistatic.com
+oaiusercontent.com
+claude.ai
+anthropic.com
+gemini.google.com
+copilot.microsoft.com
+perplexity.ai
+midjourney.com
+
+# --- Музыка и Кино (Геоблокировка / Санкционные ограничения) ---
+spotify.com
+scdn.co
+spotifycdn.com
+netflix.com
+nflxvideo.net
+nflximg.net
+soundcloud.com
+deezer.com
+
+# --- Профессиональный софт и SaaS (Геоблокировка / Отказ в обслуживании) ---
+canva.com
+notion.so
+autodesk.com
+autocad360.com
+figma.com
+intel.com
+dell.com
+docker.com
+oracle.com
+tableau.com
+
+# --- Новости и медиаресурсы ---
+meduza.io
+bbc.com
+dw.com
+rferl.org
+themoscowtimes.com
+novayagazeta.eu

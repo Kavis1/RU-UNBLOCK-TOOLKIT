@@ -1,0 +1,6 @@
+# Минимальные зависимости для работы ru-unblock-toolkit
+# Большинство модулей используют стандартную библиотеку Python (urllib, socket, ssl, json, concurrent.futures)
+pyyaml>=6.0
+requests>=2.31.0
+rich>=13.7.0
+urllib3>=2.0.0

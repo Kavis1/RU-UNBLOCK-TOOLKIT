@@ -1,0 +1,25 @@
+{
+  "sources": [
+    {
+      "name": "Antifilter Community List (All Blocked Domains)",
+      "url": "https://antifilter.download/list/domains.lst",
+      "description": "Автоматически обновляемый список заблокированных доменов AntiFilter",
+      "type": "plain_hosts",
+      "enabled": true
+    },
+    {
+      "name": "Antifilter Allyouneed (High Priority)",
+      "url": "https://antifilter.download/list/allyouneed.lst",
+      "description": "Сфокусированный список популярных блокировок",
+      "type": "plain_hosts",
+      "enabled": true
+    },
+    {
+      "name": "Zapret Info Dump Mirror",
+      "url": "https://raw.githubusercontent.com/zapret-info/z-block/master/dump.csv",
+      "description": "Дамп реестра блокировок",
+      "type": "plain_hosts",
+      "enabled": false
+    }
+  ]
+}

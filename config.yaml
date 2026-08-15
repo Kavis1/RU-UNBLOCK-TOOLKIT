@@ -1,0 +1,71 @@
+# Конфигурация ru-unblock-toolkit
+
+version: "1.0.0"
+
+# Оптимизация сетевого стека ядра Linux
+tuning:
+  enabled: true
+  apply_sysctl: true
+  congestion_control: "bbr"
+  qdisc: "fq"
+  tcp_fastopen: 3
+  rmem_max: 16777216
+  wmem_max: 16777216
+  somaxconn: 65535
+
+# Настройки диагностики
+checker:
+  timeout_seconds: 5.0
+  dns_server: "1.1.1.1" # DoH / DNS для исключения DNS-poisoning
+  concurrent_workers: 15
+  test_paths:
+    - "/"
+    - "/robots.txt"
+
+# Инструменты обхода
+tools:
+  default_dpi_tool: "zapret"     # zapret | byedpi | spoofdpi
+  default_warp_tool: "usque"      # usque | warp_wireguard
+
+  usque:
+    enabled: true
+    listen_ip: "127.0.0.1"
+    socks_port: 40001
+    udp_timeout: "120s"
+    service_name: "usque.service"
+    binary_path: "/usr/local/bin/usque"
+
+  zapret:
+    enabled: true
+    service_name: "zapret"
+    mode: "nfqws"                 # nfqws | tpws
+    queue_num: 200
+    # Стратегии десинхронизации DPI
+    desync_strategies:
+      http: "--dpi-desync=split2 --dpi-desync-split-pos=2"
+      https: "--dpi-desync=fake,multisplit --dpi-desync-split-pos=2 --dpi-desync-fooling=md5sig,badseq --dpi-desync-fake-tls=/opt/zapret/files/fake/tls_clienthello_www_google_com.bin"
+      quic: "--dpi-desync=fake --dpi-desync-repeats=6 --dpi-desync-fake-quic=/opt/zapret/files/fake/quic_initial_google.bin"
+
+  warp_wireguard:
+    enabled: false
+    interface: "warp"
+    table: 200
+    fwmark: 51821
+    mtu: 1280
+
+  byedpi:
+    enabled: false
+    socks_port: 40002
+    args: "--disorder 1 --auto=torst --fake -1 --ttl 8"
+
+  spoofdpi:
+    enabled: false
+    proxy_port: 40003
+    args: "-enable-doh -window-size 1"
+
+reporting:
+  console_color: true
+  save_json: true
+  json_output_path: "unblock_report.json"
+  save_markdown: true
+  markdown_output_path: "unblock_report.md"
